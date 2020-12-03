@@ -57,6 +57,17 @@ executable aoc2020-day2
     , criterion
   default-language: Haskell2010
 
+executable aoc2020-day3
+  main-is: Day3.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.7 && <5
+    , criterion
+  default-language: Haskell2010
+
 test-suite aoc2020-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
