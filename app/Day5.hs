@@ -30,7 +30,9 @@ parseInput :: String -> [Seat]
 parseInput i = map (parseToSeat) $ lines i
     
 getSolution1 b = maximum $ map seatID b
-getSolution2 b = filter ((== 1) . length) $ groupBy (\x y -> succ x == y) $ [1..127 * 8 + 7] \\ map seatID b
+getSolution2 b = filter (\x -> not $ (succ x `elem` seatlist) || (pred x `elem` seatlist)) seatlist
+  where
+    seatlist = [1..127 * 8 + 7] \\ map seatID b
 
 main :: IO ()
 main = do
