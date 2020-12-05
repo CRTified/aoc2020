@@ -60,6 +60,19 @@ executables:
     dependencies:
     - aoc2020
     - criterion
+  aoc2020-day4:
+    main:                Day4.hs
+    source-dirs:         app
+    other-modules:       []
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+    - criterion
+    - unordered-containers
+    - text
 
 tests:
   aoc2020-test:
