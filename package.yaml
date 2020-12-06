@@ -86,6 +86,20 @@ executables:
     - criterion
     - unordered-containers
     - text
+  aoc2020-day6:
+    main:                Day6.hs
+    source-dirs:         app
+    other-modules:       []
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+    - criterion
+    - containers
+    - unordered-containers
+    - text
 
 tests:
   aoc2020-test:
