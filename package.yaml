@@ -116,6 +116,23 @@ executables:
     - unordered-containers
     - text
     - parsec
+  aoc2020-day8:
+    main:                Day8.hs
+    source-dirs:         app
+    other-modules:       []
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+    - criterion
+    - containers
+    - graphite
+    - unordered-containers
+    - text
+    - parsec
+    - mtl
 
 tests:
   aoc2020-test:

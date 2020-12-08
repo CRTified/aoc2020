@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3a029c1e204cd320528fbb43559e5502d6ccea92fdaf0471bc340f63e4be8f91
+-- hash: 153ecf7df46926812737544837596f24a5cd5523a4ccc0265b1dd3934ce97779
 
 name:           aoc2020
 version:        0.1.0.0
@@ -121,6 +121,23 @@ executable aoc2020-day7
     , containers
     , criterion
     , graphite
+    , parsec
+    , text
+    , unordered-containers
+  default-language: Haskell2010
+
+executable aoc2020-day8
+  main-is: Day8.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.7 && <5
+    , containers
+    , criterion
+    , graphite
+    , mtl
     , parsec
     , text
     , unordered-containers
