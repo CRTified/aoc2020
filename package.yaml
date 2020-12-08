@@ -100,6 +100,22 @@ executables:
     - containers
     - unordered-containers
     - text
+  aoc2020-day7:
+    main:                Day7.hs
+    source-dirs:         app
+    other-modules:       []
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+    - criterion
+    - containers
+    - graphite
+    - unordered-containers
+    - text
+    - parsec
 
 tests:
   aoc2020-test:
