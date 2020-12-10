@@ -150,6 +150,23 @@ executables:
     - text
     - parsec
     - mtl
+  aoc2020-day10:
+    main:                Day10.hs
+    source-dirs:         app
+    other-modules:       []
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+    - criterion
+    - containers
+    - graphite
+    - unordered-containers
+    - text
+    - parsec
+    - mtl
 
 tests:
   aoc2020-test:
